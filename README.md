@@ -1,0 +1,1 @@
+# platformio-ststm8-platform
