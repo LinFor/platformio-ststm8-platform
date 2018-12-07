@@ -19,8 +19,7 @@
       {
         "framework-spl8s": [
           {
-            "type": "git",
-            "url": "https://github.com/LinFor/platformio-framework-spl8s.git",
+            "url": "https://github.com/LinFor/platformio-framework-spl8s/raw/master/packaged/framework-spl8s.zip",
             "version": "1.0.0",
             "system": "*"
           }
