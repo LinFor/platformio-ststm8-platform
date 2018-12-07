@@ -1,0 +1,15 @@
+{
+    "build": {
+      "extra_flags": "-DHELLO_PLATFORMIO",
+      "f_cpu": "16000000L",
+      "mcu": "stm8s103"
+    },
+    "frameworks": ["spl8s"],
+    "name": "STM8S103F3P",
+    "upload": {
+      "maximum_ram_size": 1024,
+      "maximum_size": 8192
+    },
+    "url": "http://st.com",
+    "vendor": "ST"
+  }

@@ -1,0 +1,52 @@
+{
+    "name": "ststm8",
+    "title": "ST STM8 platform",
+    "description": "ST STM8 platform using sdcc toolchain",
+    "url": "https://github.com/LinFor/platformio-ststm8-platform",
+    "homepage": "https://github.com/LinFor/platformio-ststm8-platform",
+    "license": "Apache-2.0",
+    "engines": {
+      "platformio": "~3.6.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/LinFor/platformio-ststm8-platform.git"
+    },
+    "version": "1.0.0",
+    "packageRepositories": [
+      "https://dl.bintray.com/platformio/dl-packages/manifest.json",
+      "http://dl.platformio.org/packages/manifest.json",
+      {
+        "framework-spl8s": [
+          {
+            "type": "git",
+            "url": "https://github.com/LinFor/platformio-framework-spl8s.git",
+            "version": "1.0.0",
+            "system": "*"
+          }
+        ]
+      }
+    ],
+    "frameworks": {
+      "spl8s": {
+        "package": "framework-spl8s",
+        "script": "builder/frameworks/spl8s.py"
+      }
+    },
+    "packages": {
+      "toolchain-sdcc": {
+        "type": "toolchain",
+        "version": ">=1.30603.0"
+      },
+      "framework-spl8s": {
+        "type": "framework",
+        "optional": true,
+        "version": "1.0.0"
+      },
+      "tool-jlink": {
+        "type": "uploader",
+        "optional": true,
+        "version": "^1.63208.0"
+      }
+    }
+  }
